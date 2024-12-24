@@ -11,7 +11,7 @@ A real-time lightweight transmission line insulator defect detection algorithm
 3. attention module files: "models/ELA.py, SE.py, CoordAttention.py". They are registered in "yolo.py"
 4. DCNv2, Bottleneck_DCN, and C3_DCN are defined in "models/common.py" and registered in "yolo.py"
 # Dataset
-The dataset is available at:
+The dataset is available at: https://drive.google.com/file/d/1ZnZGZ3hXuHnOeEWCOoqJgnHSwYfOkgag/view?usp=sharing
 # Results
 1. Results of K-means Clustering
 The scales of the nine prior anchor boxes obtained after clustering were as follows:
