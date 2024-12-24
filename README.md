@@ -18,10 +18,11 @@ The scales of the nine prior anchor boxes obtained after clustering were as foll
 [
  [119 40], [161 285], [ 60 49],
  [105 89], [195 158], [497 296],
- [46 98], [84 154], and [156 511]
+ [46 98], [84 154], [156 511]
 ]
 
 3. Performance comparison of integrating different attention modules
+
 Model    | Precision(%)    | Recall(%)  | mAP50(%)  | Parameters
 -------- | -----           | -----      | -----     | -----
 YOLOv5n  | 87.7    | 84.1	| 89.2        | 1,764,577        
@@ -30,6 +31,7 @@ YOLOv5n  | 87.7    | 84.1	| 89.2        | 1,764,577
 +ELA     | 89.7    | 83.0 | 90.0 (+0.8) | 1,783,393(+18,816)
 
 3. Performance comparison of YOLOv5n, YOLOv5n-ELA, and KED-YOLO models
+
 Model    | Precision(%)    | Recall(%)  | mAP50(%)  | Parameters
 -------- | -----           | -----      | -----     | -----
 YOLOv5n   | 87.7    | 84.1	| 89.2        | 1,764,577        
