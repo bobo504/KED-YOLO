@@ -13,10 +13,25 @@ A real-time lightweight transmission line insulator defect detection algorithm
 # Dataset
 The dataset is available at:
 # Results
-Performance comparison of integrating different attention modules
+1. Results of K-means Clustering
+The scales of the nine prior anchor boxes obtained after clustering were as follows:
+[
+ [119 40], [161 285], [ 60 49],
+ [105 89], [195 158], [497 296],
+ [46 98], [84 154], and [156 511]
+]
+
+3. Performance comparison of integrating different attention modules
 Model    | Precision(%)    | Recall(%)  | mAP50(%)  | Parameters
 -------- | -----           | -----      | -----     | -----
 YOLOv5n  | 87.7    | 84.1	| 89.2        | 1,764,577        
 +SE      | 88.6    | 84.4 | 89.6 (+0.4) | 1,775,329(+10,752) 			
 +CA      | 87.5    | 84.2 | 89.6 (+0.4) | 1,776,297(+11,720)
-+ELA     | 89.7    | 83.0 | 90.0 (+0.8) | 1,783,393(+18,816) 			
++ELA     | 89.7    | 83.0 | 90.0 (+0.8) | 1,783,393(+18,816)
+
+3. Performance comparison of YOLOv5n, YOLOv5n-ELA, and KED-YOLO models
+Model    | Precision(%)    | Recall(%)  | mAP50(%)  | Parameters
+-------- | -----           | -----      | -----     | -----
+YOLOv5n   | 87.7    | 84.1	| 89.2        | 1,764,577        
++ELA      | 89.7    | 83.0 | 90.0 (+0.8) | 1,783,393(+18,816) 			
++ELA+DCNv2 (KED-YOLO)      | 90.0(+2.3)    | 89.8(+5.7) | 90.8(+1.6) | 1,825,398 (+60,821)
